@@ -13,12 +13,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let viewController = UIStoryboard(name: "Onboarding", bundle: nil).instantiateInitialViewController() as? OnboardingViewController {
-            viewController.onClose = {
-                DispatchQueue.main.async {
-                    self.showAlert()
-                }
-            }
-            present(viewController, animated: true, completion: nil)            
+            present(viewController, animated: true, completion: nil)
         }
     }
     

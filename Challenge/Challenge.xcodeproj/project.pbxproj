@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4349824221F92E7B00994ED2 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349824021F92E7B00994ED2 /* OnboardingCollectionViewCell.swift */; };
+		4349824321F92E7B00994ED2 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4349824121F92E7B00994ED2 /* OnboardingCollectionViewCell.xib */; };
 		434EFC0F21F7E329004043D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EFC0E21F7E329004043D3 /* AppDelegate.swift */; };
 		434EFC1121F7E329004043D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EFC1021F7E329004043D3 /* ViewController.swift */; };
 		434EFC1421F7E32A004043D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434EFC1221F7E32A004043D3 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4349824021F92E7B00994ED2 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		4349824121F92E7B00994ED2 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		434EFC0B21F7E329004043D3 /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		434EFC0E21F7E329004043D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		434EFC1021F7E329004043D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				434EFC2521F7E3BA004043D3 /* LoggedViewController.xib */,
 				434EFC2821F7EC89004043D3 /* Onboarding.storyboard */,
 				434EFC2A21F7EDF0004043D3 /* OnboardingViewController.swift */,
+				4349824021F92E7B00994ED2 /* OnboardingCollectionViewCell.swift */,
+				4349824121F92E7B00994ED2 /* OnboardingCollectionViewCell.xib */,
 			);
 			path = Challenge;
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 				434EFC2321F7E347004043D3 /* LoginViewController.xib in Resources */,
 				434EFC1921F7E32A004043D3 /* LaunchScreen.storyboard in Resources */,
 				434EFC2921F7EC89004043D3 /* Onboarding.storyboard in Resources */,
+				4349824321F92E7B00994ED2 /* OnboardingCollectionViewCell.xib in Resources */,
 				434EFC1621F7E32A004043D3 /* Assets.xcassets in Resources */,
 				434EFC1421F7E32A004043D3 /* Main.storyboard in Resources */,
 			);
@@ -161,6 +168,7 @@
 				434EFC2B21F7EDF0004043D3 /* OnboardingViewController.swift in Sources */,
 				434EFC2621F7E3BA004043D3 /* LoggedViewController.swift in Sources */,
 				434EFC0F21F7E329004043D3 /* AppDelegate.swift in Sources */,
+				4349824221F92E7B00994ED2 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
