@@ -10,11 +10,33 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var logoImgaView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let viewController = UIStoryboard(name: "Onboarding", bundle: nil).instantiateInitialViewController() as? OnboardingViewController {
             present(viewController, animated: true, completion: nil)
         }
+        
+        configureButton()
+        configureNavigationItem()
+        configureLogo()
+    }
+    
+    private func configureButton() {
+        loginButton.layer.cornerRadius = 4
+        loginButton.layer.masksToBounds = true
+    }
+    
+    private func configureNavigationItem() {
+        navigationItem.title = "Login"
+    }
+    
+    private func configureLogo() {
+        logoImgaView.image = UIImage(named: "background")
+        logoImgaView.layer.cornerRadius = logoImgaView.frame.height / 2
+        logoImgaView.layer.masksToBounds = true
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
