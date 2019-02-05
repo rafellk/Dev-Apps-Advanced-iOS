@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFq-8n-kwx">
-                    <rect key="frame" x="166" y="323" width="58" height="21"/>
+                    <rect key="frame" x="158.5" y="323" width="58" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -29,8 +29,8 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fFq-8n-kwx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="166" id="WcE-XZ-Drg"/>
                 <constraint firstItem="fFq-8n-kwx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mBW-ip-1gb"/>
+                <constraint firstItem="fFq-8n-kwx" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xEX-7P-SF3"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

@@ -13,6 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Challenge" customModuleProvider="target">
             <connections>
+                <outlet property="buttonTopConstraint" destination="TI6-TE-AlN" id="kiq-iV-O6b"/>
                 <outlet property="loginButton" destination="6YB-pA-5m5" id="gEz-Ro-eUH"/>
                 <outlet property="logoImgaView" destination="5OM-Ps-V4T" id="xls-fv-U58"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -52,9 +53,8 @@
                     <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                 </textField>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5OM-Ps-V4T">
-                    <rect key="frame" x="102.5" y="105.5" width="170" height="170"/>
+                    <rect key="frame" x="103" y="107" width="169" height="168.5"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="170" id="idO-hX-k1k"/>
                         <constraint firstAttribute="width" secondItem="5OM-Ps-V4T" secondAttribute="height" multiplier="1:1" id="ydl-ws-g7y"/>
                     </constraints>
                 </imageView>
@@ -64,6 +64,7 @@
                 <constraint firstItem="hR6-mG-5eA" firstAttribute="top" secondItem="5OM-Ps-V4T" secondAttribute="bottom" constant="48" id="4X4-WE-oXr"/>
                 <constraint firstItem="njW-ih-Gj9" firstAttribute="top" secondItem="hR6-mG-5eA" secondAttribute="bottom" constant="23.5" id="9BS-Ep-8uZ"/>
                 <constraint firstItem="6YB-pA-5m5" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="AAx-NT-SJn"/>
+                <constraint firstItem="5OM-Ps-V4T" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.45" id="PvN-Ca-XlN"/>
                 <constraint firstItem="6YB-pA-5m5" firstAttribute="top" secondItem="njW-ih-Gj9" secondAttribute="bottom" constant="24" id="TI6-TE-AlN"/>
                 <constraint firstItem="njW-ih-Gj9" firstAttribute="width" secondItem="hR6-mG-5eA" secondAttribute="width" id="WnQ-Zu-aCe"/>
                 <constraint firstItem="hR6-mG-5eA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Y6n-Ts-Ruy"/>

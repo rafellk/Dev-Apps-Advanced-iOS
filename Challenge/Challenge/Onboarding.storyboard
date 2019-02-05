@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i4t-Li-Qz6">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="i4t-Li-Qz6" customClass="OnboardingViewController" customModule="Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZwJ-PD-Ih8">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ha4-jd-9Mt">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="63Z-kg-UFc">
                                     <size key="itemSize" width="50" height="50"/>
@@ -32,8 +32,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ha4-jd-9Mt" firstAttribute="top" secondItem="WHD-eb-YEV" secondAttribute="top" id="4Lz-Ug-VtG"/>
-                            <constraint firstItem="WHD-eb-YEV" firstAttribute="bottom" secondItem="Ha4-jd-9Mt" secondAttribute="bottom" id="RYh-Bx-aFi"/>
+                            <constraint firstItem="Ha4-jd-9Mt" firstAttribute="top" secondItem="ZwJ-PD-Ih8" secondAttribute="top" id="4Lz-Ug-VtG"/>
+                            <constraint firstAttribute="bottom" secondItem="Ha4-jd-9Mt" secondAttribute="bottom" id="RYh-Bx-aFi"/>
                             <constraint firstItem="WHD-eb-YEV" firstAttribute="trailing" secondItem="Ha4-jd-9Mt" secondAttribute="trailing" id="uqu-Pp-44N"/>
                             <constraint firstItem="Ha4-jd-9Mt" firstAttribute="leading" secondItem="WHD-eb-YEV" secondAttribute="leading" id="yfg-FR-pEf"/>
                         </constraints>

@@ -12,6 +12,9 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var logoImgaView: UIImageView!
+    @IBOutlet weak var buttonTopConstraint: NSLayoutConstraint!
+    
+    var onboardingViewController: UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,28 @@ class LoginViewController: UIViewController {
         
         configureButton()
         configureNavigationItem()
+//        configureLogo()
+    }
+    
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.willTransition(to: newCollection, with: coordinator)
+        // landscape
+//        if newCollection.verticalSizeClass == .compact {
+//            buttonTopConstraint.constant = 200
+//        } else {
+//            buttonTopConstraint.constant = 24
+//        }
+        
+        if newCollection.verticalSizeClass == .compact {
+            onboardingViewController = UIStoryboard(name: "Onboarding", bundle: nil).instantiateInitialViewController()
+            present(onboardingViewController!, animated: true, completion: nil)
+        } else {
+            onboardingViewController?.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         configureLogo()
     }
     
@@ -35,7 +60,7 @@ class LoginViewController: UIViewController {
     
     private func configureLogo() {
         logoImgaView.image = UIImage(named: "background")
-        logoImgaView.layer.cornerRadius = logoImgaView.frame.height / 2
+        logoImgaView.layer.cornerRadius = logoImgaView.bounds.height / 2
         logoImgaView.layer.masksToBounds = true
     }
     
