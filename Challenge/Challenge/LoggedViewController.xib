@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoggedViewController" customModule="Challenge" customModuleProvider="target">
             <connections>
+                <outlet property="mapView" destination="EIb-J0-73K" id="IFM-7r-kg1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,10 +27,17 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EIb-J0-73K">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </mapView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EIb-J0-73K" secondAttribute="trailing" id="CmI-JM-EOK"/>
+                <constraint firstItem="EIb-J0-73K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TtV-Ka-hxV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EIb-J0-73K" secondAttribute="bottom" id="YbJ-kZ-m18"/>
                 <constraint firstItem="fFq-8n-kwx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mBW-ip-1gb"/>
+                <constraint firstItem="EIb-J0-73K" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="rwH-Je-UXU"/>
                 <constraint firstItem="fFq-8n-kwx" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xEX-7P-SF3"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
