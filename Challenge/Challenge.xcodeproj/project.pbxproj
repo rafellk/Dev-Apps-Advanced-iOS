@@ -20,6 +20,8 @@
 		434EFC2721F7E3BA004043D3 /* LoggedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 434EFC2521F7E3BA004043D3 /* LoggedViewController.xib */; };
 		434EFC2921F7EC89004043D3 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434EFC2821F7EC89004043D3 /* Onboarding.storyboard */; };
 		434EFC2B21F7EDF0004043D3 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EFC2A21F7EDF0004043D3 /* OnboardingViewController.swift */; };
+		4392D9E523C94B32008E69E2 /* LoginViewControllerLandscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4392D9E423C94B32008E69E2 /* LoginViewControllerLandscape.xib */; };
+		4392D9E723C94EDA008E69E2 /* LoginViewControllerLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392D9E623C94EDA008E69E2 /* LoginViewControllerLandscape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		434EFC2521F7E3BA004043D3 /* LoggedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoggedViewController.xib; sourceTree = "<group>"; };
 		434EFC2821F7EC89004043D3 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		434EFC2A21F7EDF0004043D3 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		4392D9E423C94B32008E69E2 /* LoginViewControllerLandscape.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewControllerLandscape.xib; sourceTree = "<group>"; };
+		4392D9E623C94EDA008E69E2 /* LoginViewControllerLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerLandscape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				434EFC2A21F7EDF0004043D3 /* OnboardingViewController.swift */,
 				4349824021F92E7B00994ED2 /* OnboardingCollectionViewCell.swift */,
 				4349824121F92E7B00994ED2 /* OnboardingCollectionViewCell.xib */,
+				4392D9E423C94B32008E69E2 /* LoginViewControllerLandscape.xib */,
+				4392D9E623C94EDA008E69E2 /* LoginViewControllerLandscape.swift */,
 			);
 			path = Challenge;
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4392D9E523C94B32008E69E2 /* LoginViewControllerLandscape.xib in Resources */,
 				434EFC2721F7E3BA004043D3 /* LoggedViewController.xib in Resources */,
 				434EFC2321F7E347004043D3 /* LoginViewController.xib in Resources */,
 				434EFC1921F7E32A004043D3 /* LaunchScreen.storyboard in Resources */,
@@ -167,6 +174,7 @@
 				434EFC1121F7E329004043D3 /* ViewController.swift in Sources */,
 				434EFC2B21F7EDF0004043D3 /* OnboardingViewController.swift in Sources */,
 				434EFC2621F7E3BA004043D3 /* LoggedViewController.swift in Sources */,
+				4392D9E723C94EDA008E69E2 /* LoginViewControllerLandscape.swift in Sources */,
 				434EFC0F21F7E329004043D3 /* AppDelegate.swift in Sources */,
 				4349824221F92E7B00994ED2 /* OnboardingCollectionViewCell.swift in Sources */,
 			);

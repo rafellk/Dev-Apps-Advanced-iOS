@@ -10,14 +10,19 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+//
+//        if let viewController = storyboard.instantiateInitialViewController() as? OnboardingViewController {
+//            window?.rootViewController = viewController
+//        }
+
         let viewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
         let navigationController = UINavigationController(rootViewController: viewController)
-        self.window?.rootViewController = navigationController
+        window?.rootViewController = navigationController
         return true
     }
 

@@ -15,10 +15,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: Datasource Variables
-    var datasource = [
-        OnboardingCollectionViewCellModel(title: "The best app ever", description: "First app with the new guys", imageName: "background"),
-        OnboardingCollectionViewCellModel(title: "The best app ever", description: "First app with the new guys", imageName: "background")
-    ]
+    var datasource: [OnboardingCollectionViewCellModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +29,10 @@ class OnboardingViewController: UIViewController {
         gesture.direction = .down
         view.addGestureRecognizer(gesture)
 //        configureButton()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     @objc func gestureApplied() {
@@ -57,10 +58,12 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return datasource.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     

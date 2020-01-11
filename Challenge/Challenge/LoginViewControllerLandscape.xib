@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewControllerLandscape" customModule="Challenge" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="HYA-ot-itU" id="fgD-FO-cwh"/>
+                <outlet property="logoImageView" destination="Tn4-og-Oe5" id="bYT-to-nKm"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cpX-Hn-6ST"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tn4-og-Oe5">
+                    <rect key="frame" x="50" y="91.5" width="137.5" height="137.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Tn4-og-Oe5" secondAttribute="height" multiplier="1:1" id="jPt-3N-diY"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="   Login " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VT8-d5-Dq4">
+                    <rect key="frame" x="252.5" y="84" width="255.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xn5-SN-my6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="   Login " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cB6-iR-LEJ">
+                    <rect key="frame" x="252.5" y="132" width="255.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="aW9-lD-B8s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYA-ot-itU">
+                    <rect key="frame" x="252.5" y="188" width="255.5" height="47"/>
+                    <color key="backgroundColor" name="myColorBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="VQM-Gp-L7N"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="JOe-Id-WWr"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odq-uG-geP" userLabel="Spacer">
+                    <rect key="frame" x="219.5" y="56" width="1" height="208"/>
+                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="opg-T3-4c9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cB6-iR-LEJ" firstAttribute="top" secondItem="VT8-d5-Dq4" secondAttribute="bottom" constant="8" id="09d-SW-VzW"/>
+                <constraint firstItem="Tn4-og-Oe5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="4cx-SN-WPn"/>
+                <constraint firstItem="VT8-d5-Dq4" firstAttribute="leading" secondItem="odq-uG-geP" secondAttribute="trailing" constant="32" id="7Ys-K8-a5S"/>
+                <constraint firstItem="odq-uG-geP" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="-64" id="8lh-jx-1Ct"/>
+                <constraint firstItem="odq-uG-geP" firstAttribute="leading" secondItem="Tn4-og-Oe5" secondAttribute="trailing" constant="32" id="FOm-M3-2D2"/>
+                <constraint firstItem="HYA-ot-itU" firstAttribute="top" secondItem="cB6-iR-LEJ" secondAttribute="bottom" constant="16" id="K28-Wb-nyJ"/>
+                <constraint firstItem="VT8-d5-Dq4" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.45" id="Nkw-3N-hDH"/>
+                <constraint firstItem="cB6-iR-LEJ" firstAttribute="centerX" secondItem="VT8-d5-Dq4" secondAttribute="centerX" id="Ucu-iX-Zis"/>
+                <constraint firstItem="HYA-ot-itU" firstAttribute="centerX" secondItem="cB6-iR-LEJ" secondAttribute="centerX" id="dO4-9u-WNz"/>
+                <constraint firstItem="odq-uG-geP" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="0.65" id="et8-0o-i0g"/>
+                <constraint firstItem="cB6-iR-LEJ" firstAttribute="width" secondItem="VT8-d5-Dq4" secondAttribute="width" id="hjM-Uz-QiW"/>
+                <constraint firstItem="odq-uG-geP" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="kTK-xb-8Ue"/>
+                <constraint firstItem="Tn4-og-Oe5" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="kTd-Cy-rb8"/>
+                <constraint firstItem="HYA-ot-itU" firstAttribute="width" secondItem="cB6-iR-LEJ" secondAttribute="width" id="syc-J5-tMh"/>
+                <constraint firstItem="cB6-iR-LEJ" firstAttribute="centerY" secondItem="Tn4-og-Oe5" secondAttribute="centerY" constant="-8" id="y1t-XS-oRU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="116" y="111"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="myColorBlue">
+            <color red="0.21176470588235294" green="0.21176470588235294" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
