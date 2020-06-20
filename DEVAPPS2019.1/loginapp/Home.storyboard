@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mlj-Kf-Ebo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="Ern-DD-KWB">
+            <objects>
+                <viewController id="Mlj-Kf-Ebo" customClass="HomeViewController" customModule="loginapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I7l-sB-W2o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ZEU-FL-ZcQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIG-Nd-oVm">
+                                <rect key="frame" x="186" y="443" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vIG-Nd-oVm" firstAttribute="centerX" secondItem="shJ-Hn-CwK" secondAttribute="centerX" id="67i-OA-g3N"/>
+                            <constraint firstItem="ZEU-FL-ZcQ" firstAttribute="leading" secondItem="I7l-sB-W2o" secondAttribute="leading" id="ABh-Z8-wIF"/>
+                            <constraint firstItem="vIG-Nd-oVm" firstAttribute="centerY" secondItem="shJ-Hn-CwK" secondAttribute="centerY" id="bE0-Ef-GdZ"/>
+                            <constraint firstItem="ZEU-FL-ZcQ" firstAttribute="top" secondItem="I7l-sB-W2o" secondAttribute="top" id="d0S-N1-8ee"/>
+                            <constraint firstItem="ZEU-FL-ZcQ" firstAttribute="trailing" secondItem="I7l-sB-W2o" secondAttribute="trailing" id="eCm-vF-6i5"/>
+                            <constraint firstAttribute="bottom" secondItem="ZEU-FL-ZcQ" secondAttribute="bottom" id="uou-SI-4bU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="shJ-Hn-CwK"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="vIG-Nd-oVm" id="HTR-YT-FBm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mV1-fo-w7S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="145.98214285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="929" height="432"/>
+    </resources>
+</document>
