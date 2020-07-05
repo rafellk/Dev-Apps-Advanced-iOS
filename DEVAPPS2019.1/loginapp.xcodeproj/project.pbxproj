@@ -19,6 +19,13 @@
 		8739105F249E8B6A00322703 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8739105E249E8B6A00322703 /* Authentication.storyboard */; };
 		87391063249E96EC00322703 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87391062249E96EC00322703 /* SignInViewController.swift */; };
 		87391065249E9BEA00322703 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87391064249E9BEA00322703 /* ResetPasswordViewController.swift */; };
+		87725CB824B0B40F00E67EA9 /* SignInLandscape.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87725CB724B0B40F00E67EA9 /* SignInLandscape.storyboard */; };
+		87725CBA24B0B62200E67EA9 /* AuthenticationContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87725CB924B0B62200E67EA9 /* AuthenticationContainerViewController.swift */; };
+		87725CBC24B0E5F300E67EA9 /* ContaineriPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87725CBB24B0E5F300E67EA9 /* ContaineriPadViewController.swift */; };
+		87725CBF24B0EA8000E67EA9 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87725CBE24B0EA8000E67EA9 /* OnboardingViewController.swift */; };
+		87725CC324B0F5EF00E67EA9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87725CC224B0F5EF00E67EA9 /* OnboardingView.swift */; };
+		87725CC624B0F69900E67EA9 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87725CC424B0F69900E67EA9 /* OnboardingCollectionViewCell.swift */; };
+		87725CC724B0F69900E67EA9 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87725CC524B0F69900E67EA9 /* OnboardingCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		8739105E249E8B6A00322703 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		87391062249E96EC00322703 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		87391064249E9BEA00322703 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		87725CB724B0B40F00E67EA9 /* SignInLandscape.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInLandscape.storyboard; sourceTree = "<group>"; };
+		87725CB924B0B62200E67EA9 /* AuthenticationContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContainerViewController.swift; sourceTree = "<group>"; };
+		87725CBB24B0E5F300E67EA9 /* ContaineriPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaineriPadViewController.swift; sourceTree = "<group>"; };
+		87725CBE24B0EA8000E67EA9 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		87725CC224B0F5EF00E67EA9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		87725CC424B0F69900E67EA9 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		87725CC524B0F69900E67EA9 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,7 @@
 		8739105C249E8AFE00322703 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				87725CBD24B0EA7000E67EA9 /* Onboarding */,
 				8739105D249E8B0D00322703 /* Authentication */,
 			);
 			path = Features;
@@ -104,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				8739105E249E8B6A00322703 /* Authentication.storyboard */,
+				87725CB724B0B40F00E67EA9 /* SignInLandscape.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,8 +129,37 @@
 			children = (
 				87391062249E96EC00322703 /* SignInViewController.swift */,
 				87391064249E9BEA00322703 /* ResetPasswordViewController.swift */,
+				87725CB924B0B62200E67EA9 /* AuthenticationContainerViewController.swift */,
+				87725CBB24B0E5F300E67EA9 /* ContaineriPadViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		87725CBD24B0EA7000E67EA9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				87725CC124B0F5E000E67EA9 /* Views */,
+				87725CC024B0F5D200E67EA9 /* Controllers */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		87725CC024B0F5D200E67EA9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				87725CBE24B0EA8000E67EA9 /* OnboardingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		87725CC124B0F5E000E67EA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87725CC224B0F5EF00E67EA9 /* OnboardingView.swift */,
+				87725CC424B0F69900E67EA9 /* OnboardingCollectionViewCell.swift */,
+				87725CC524B0F69900E67EA9 /* OnboardingCollectionViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +225,8 @@
 				8739105B249E4DB000322703 /* Home.storyboard in Resources */,
 				87391044249D7DC600322703 /* Assets.xcassets in Resources */,
 				87391042249D7DC500322703 /* Main.storyboard in Resources */,
+				87725CB824B0B40F00E67EA9 /* SignInLandscape.storyboard in Resources */,
+				87725CC724B0F69900E67EA9 /* OnboardingCollectionViewCell.xib in Resources */,
 				87391055249E362000322703 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,9 +241,14 @@
 				8739103F249D7DC500322703 /* ViewController.swift in Sources */,
 				8739103B249D7DC500322703 /* AppDelegate.swift in Sources */,
 				8739103D249D7DC500322703 /* SceneDelegate.swift in Sources */,
+				87725CC324B0F5EF00E67EA9 /* OnboardingView.swift in Sources */,
+				87725CBA24B0B62200E67EA9 /* AuthenticationContainerViewController.swift in Sources */,
+				87725CBC24B0E5F300E67EA9 /* ContaineriPadViewController.swift in Sources */,
 				87391065249E9BEA00322703 /* ResetPasswordViewController.swift in Sources */,
 				87391063249E96EC00322703 /* SignInViewController.swift in Sources */,
+				87725CBF24B0EA8000E67EA9 /* OnboardingViewController.swift in Sources */,
 				87391054249E362000322703 /* HomeViewController.swift in Sources */,
+				87725CC624B0F69900E67EA9 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

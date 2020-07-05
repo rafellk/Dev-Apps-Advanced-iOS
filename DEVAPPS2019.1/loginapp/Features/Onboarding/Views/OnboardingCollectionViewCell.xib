@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnboardingCollectionViewCell" customModule="loginapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="771"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="771"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y90-Gp-EOF">
+                        <rect key="frame" x="8" y="8" width="368" height="755"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lkhjad lkjfh alsdkj adslkaj sdlkj alskdj aslkjd hlakjsd " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfV-52-kFJ">
+                                <rect key="frame" x="16" y="16" width="336" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cjz-0O-0Ve"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" name="logoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UQv-pH-xCV">
+                                <rect key="frame" x="0.0" y="132" width="368" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UQv-pH-xCV" firstAttribute="top" secondItem="lfV-52-kFJ" secondAttribute="bottom" constant="16" id="2rQ-SO-bnM"/>
+                            <constraint firstAttribute="trailing" secondItem="lfV-52-kFJ" secondAttribute="trailing" constant="16" id="TYg-qs-E63"/>
+                            <constraint firstAttribute="trailing" secondItem="UQv-pH-xCV" secondAttribute="trailing" id="TbE-5R-PcC"/>
+                            <constraint firstItem="lfV-52-kFJ" firstAttribute="top" secondItem="Y90-Gp-EOF" secondAttribute="top" constant="16" id="cx1-4m-RrJ"/>
+                            <constraint firstItem="lfV-52-kFJ" firstAttribute="leading" secondItem="Y90-Gp-EOF" secondAttribute="leading" constant="16" id="p0m-8z-Fqb"/>
+                            <constraint firstAttribute="bottom" secondItem="UQv-pH-xCV" secondAttribute="bottom" id="qUO-dC-Oxa"/>
+                            <constraint firstItem="UQv-pH-xCV" firstAttribute="leading" secondItem="Y90-Gp-EOF" secondAttribute="leading" id="rWT-uf-f1Z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Y90-Gp-EOF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="0AG-RE-lSv"/>
+                <constraint firstAttribute="bottom" secondItem="Y90-Gp-EOF" secondAttribute="bottom" constant="8" id="8Vo-Or-9yl"/>
+                <constraint firstAttribute="trailing" secondItem="Y90-Gp-EOF" secondAttribute="trailing" constant="8" id="Ref-9J-HOS"/>
+                <constraint firstItem="Y90-Gp-EOF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="lZI-bi-AIv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="384" height="771"/>
+            <connections>
+                <outlet property="containerView" destination="Y90-Gp-EOF" id="qab-Lz-AR3"/>
+                <outlet property="imageView" destination="UQv-pH-xCV" id="AFJ-8E-cwQ"/>
+                <outlet property="mainLabel" destination="lfV-52-kFJ" id="N6Q-TF-R7I"/>
+            </connections>
+            <point key="canvasLocation" x="379.71014492753625" y="304.35267857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="logoColor">
+            <color red="1" green="0.086274509803921567" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
