@@ -15,47 +15,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="kfA-Mp-w8m">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="VmP-eA-0Mb">
+                                <rect key="frame" x="0.0" y="27" width="414" height="896"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tap-CF-hpJ">
-                                <rect key="frame" x="82" y="458" width="250" height="34"/>
+                                <rect key="frame" x="79" y="450" width="256" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="h37-DA-Bmt"/>
+                                    <constraint firstAttribute="height" constant="50" id="1Ti-xj-scO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WPv-2r-9In">
-                                <rect key="frame" x="82" y="508" width="250" height="34"/>
+                                <rect key="frame" x="79" y="508" width="256" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="im7-8E-ibh">
-                                <rect key="frame" x="82" y="566" width="250" height="30"/>
+                                <rect key="frame" x="79" y="566" width="256" height="50"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Rd6-eg-dZO" kind="show" id="VrH-Ny-Enx"/>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="25z-XN-6LJ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="WPv-2r-9In" firstAttribute="width" secondItem="tap-CF-hpJ" secondAttribute="width" id="9Wk-Pb-lx0"/>
-                            <constraint firstAttribute="trailing" secondItem="kfA-Mp-w8m" secondAttribute="trailing" id="CBa-ne-ArF"/>
-                            <constraint firstItem="tap-CF-hpJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CGt-J3-Wc7"/>
-                            <constraint firstItem="im7-8E-ibh" firstAttribute="centerX" secondItem="WPv-2r-9In" secondAttribute="centerX" id="NJf-tQ-CSF"/>
-                            <constraint firstItem="WPv-2r-9In" firstAttribute="centerX" secondItem="tap-CF-hpJ" secondAttribute="centerX" id="Pad-5F-Mjj"/>
-                            <constraint firstItem="tap-CF-hpJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Rfx-tH-53J"/>
-                            <constraint firstItem="im7-8E-ibh" firstAttribute="top" secondItem="WPv-2r-9In" secondAttribute="bottom" constant="24" id="aX5-Jq-d6B"/>
-                            <constraint firstItem="kfA-Mp-w8m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kPl-Sj-vro"/>
-                            <constraint firstItem="WPv-2r-9In" firstAttribute="top" secondItem="tap-CF-hpJ" secondAttribute="bottom" constant="16" id="u8n-mR-bcQ"/>
-                            <constraint firstItem="kfA-Mp-w8m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uDx-yw-kmd"/>
-                            <constraint firstItem="im7-8E-ibh" firstAttribute="width" secondItem="WPv-2r-9In" secondAttribute="width" id="xMf-1i-mNc"/>
-                            <constraint firstAttribute="bottom" secondItem="kfA-Mp-w8m" secondAttribute="bottom" id="z0U-3a-K8y"/>
+                            <constraint firstItem="tap-CF-hpJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1ha-vB-YrT"/>
+                            <constraint firstItem="WPv-2r-9In" firstAttribute="centerX" secondItem="tap-CF-hpJ" secondAttribute="centerX" id="44Q-iM-HEe"/>
+                            <constraint firstItem="VmP-eA-0Mb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="525-kt-mnt"/>
+                            <constraint firstItem="VmP-eA-0Mb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Amj-Mi-fza"/>
+                            <constraint firstItem="VmP-eA-0Mb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CVy-hD-mUt"/>
+                            <constraint firstItem="im7-8E-ibh" firstAttribute="top" secondItem="WPv-2r-9In" secondAttribute="bottom" constant="8" id="EWT-EQ-opx"/>
+                            <constraint firstItem="WPv-2r-9In" firstAttribute="height" secondItem="tap-CF-hpJ" secondAttribute="height" id="Ndu-U6-GhJ"/>
+                            <constraint firstItem="WPv-2r-9In" firstAttribute="top" secondItem="tap-CF-hpJ" secondAttribute="bottom" constant="8" id="Q5k-Rb-pnb"/>
+                            <constraint firstItem="VmP-eA-0Mb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="T3O-2Y-Zis"/>
+                            <constraint firstItem="im7-8E-ibh" firstAttribute="centerX" secondItem="WPv-2r-9In" secondAttribute="centerX" id="aR6-K3-18Q"/>
+                            <constraint firstItem="im7-8E-ibh" firstAttribute="width" secondItem="WPv-2r-9In" secondAttribute="width" id="b4W-xN-V1a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tap-CF-hpJ" secondAttribute="trailing" constant="79" id="czg-hN-TAk"/>
+                            <constraint firstItem="tap-CF-hpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="ttu-ZU-Rxs"/>
+                            <constraint firstItem="im7-8E-ibh" firstAttribute="height" secondItem="WPv-2r-9In" secondAttribute="height" id="wpd-IJ-EgS"/>
+                            <constraint firstItem="WPv-2r-9In" firstAttribute="width" secondItem="tap-CF-hpJ" secondAttribute="width" id="yyn-lJ-pIa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

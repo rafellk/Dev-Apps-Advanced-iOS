@@ -12,9 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonTapped(_ sender: Any) {
+        let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }
-

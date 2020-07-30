@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oZx-ci-VII">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="PR9-C1-7cS">
+            <objects>
+                <viewController id="oZx-ci-VII" customClass="SignInViewController" customModule="DEVAPPS_2019_2_Authentication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tem-P4-zMK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2l-Ec-5gG">
+                                <rect key="frame" x="82" y="436" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="v3s-FQ-AG6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R0k-hg-tBj">
+                                <rect key="frame" x="82" y="486" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="XXK-xT-wnf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqS-Co-lwX">
+                                <rect key="frame" x="82" y="544" width="250" height="34"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="oZx-ci-VII" eventType="touchUpInside" id="blC-TV-DLC"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="fq9-Pt-BXr">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="N2l-Ec-5gG" firstAttribute="centerY" secondItem="Al7-1L-B2Q" secondAttribute="centerY" id="1wQ-Kd-kSx"/>
+                            <constraint firstItem="fq9-Pt-BXr" firstAttribute="centerY" secondItem="Al7-1L-B2Q" secondAttribute="centerY" id="2mt-5Q-hSp"/>
+                            <constraint firstItem="R0k-hg-tBj" firstAttribute="centerX" secondItem="N2l-Ec-5gG" secondAttribute="centerX" id="5b2-52-Eif"/>
+                            <constraint firstItem="oqS-Co-lwX" firstAttribute="top" secondItem="R0k-hg-tBj" secondAttribute="bottom" constant="24" id="8Nl-Nb-vt1"/>
+                            <constraint firstItem="oqS-Co-lwX" firstAttribute="centerX" secondItem="R0k-hg-tBj" secondAttribute="centerX" id="Cdv-3f-vyb"/>
+                            <constraint firstItem="fq9-Pt-BXr" firstAttribute="centerX" secondItem="Al7-1L-B2Q" secondAttribute="centerX" id="E9B-Qy-7wT"/>
+                            <constraint firstItem="R0k-hg-tBj" firstAttribute="width" secondItem="N2l-Ec-5gG" secondAttribute="width" id="GUc-fa-toI"/>
+                            <constraint firstItem="fq9-Pt-BXr" firstAttribute="height" secondItem="Tem-P4-zMK" secondAttribute="height" id="Nd6-6c-dow"/>
+                            <constraint firstItem="N2l-Ec-5gG" firstAttribute="centerX" secondItem="Al7-1L-B2Q" secondAttribute="centerX" id="XdZ-7M-7kt"/>
+                            <constraint firstItem="oqS-Co-lwX" firstAttribute="height" secondItem="R0k-hg-tBj" secondAttribute="height" id="ear-Jk-61K"/>
+                            <constraint firstItem="fq9-Pt-BXr" firstAttribute="width" secondItem="Tem-P4-zMK" secondAttribute="width" id="tbO-B2-cSW"/>
+                            <constraint firstItem="oqS-Co-lwX" firstAttribute="width" secondItem="R0k-hg-tBj" secondAttribute="width" id="teg-0z-JGJ"/>
+                            <constraint firstItem="R0k-hg-tBj" firstAttribute="top" secondItem="N2l-Ec-5gG" secondAttribute="bottom" constant="16" id="wap-2i-a2r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Al7-1L-B2Q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0v6-DW-Kf8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_background" width="998" height="552"/>
+    </resources>
+</document>
