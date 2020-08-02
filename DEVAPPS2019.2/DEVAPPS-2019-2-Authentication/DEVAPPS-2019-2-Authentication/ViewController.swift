@@ -18,4 +18,14 @@ class ViewController: UIViewController {
         let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
         navigationController?.pushViewController(viewController, animated: true)
     }
+
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        if newCollection.verticalSizeClass == .compact {
+            guard let viewController = UIStoryboard(name: "SignIn", bundle: nil).instantiateInitialViewController() else {
+                return
+            }
+
+            present(viewController, animated: true)
+        }
+    }
 }

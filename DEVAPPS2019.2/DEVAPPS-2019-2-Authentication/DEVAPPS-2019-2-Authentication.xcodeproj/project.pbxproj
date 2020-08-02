@@ -19,6 +19,7 @@
 		87A1A01324CF9340003385D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A1A01124CF9340003385D7 /* LaunchScreen.storyboard */; };
 		87E5B12924D24320003DF727 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E5B12824D24320003DF727 /* SignIn.storyboard */; };
 		87E5B12B24D244FB003DF727 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E5B12A24D244FB003DF727 /* Home.storyboard */; };
+		87E6ABA724D39424001B717F /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6ABA624D39424001B717F /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		87A1A01424CF9340003385D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87E5B12824D24320003DF727 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		87E5B12A24D244FB003DF727 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		87E6ABA624D39424001B717F /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				8798ABB224D0F2C90020AAAA /* SignInViewController.xib */,
 				87E5B12824D24320003DF727 /* SignIn.storyboard */,
 				87E5B12A24D244FB003DF727 /* Home.storyboard */,
+				87E6ABA624D39424001B717F /* Singleton.swift */,
 			);
 			path = "DEVAPPS-2019-2-Authentication";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87A1A00B24CF933F003385D7 /* ViewController.swift in Sources */,
+				87E6ABA724D39424001B717F /* Singleton.swift in Sources */,
 				87A1A00724CF933F003385D7 /* AppDelegate.swift in Sources */,
 				87A1A00924CF933F003385D7 /* SceneDelegate.swift in Sources */,
 				8798ABB324D0F2C90020AAAA /* SignInViewController.swift in Sources */,

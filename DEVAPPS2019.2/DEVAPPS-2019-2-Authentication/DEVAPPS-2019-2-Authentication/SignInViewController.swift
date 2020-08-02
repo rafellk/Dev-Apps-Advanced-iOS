@@ -10,25 +10,47 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNotifications()
+        configureImageView()
+    }
+
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        if newCollection.horizontalSizeClass == .compact {
+            dismiss(animated: true)
+        }
     }
 
     @IBAction func buttonTapped(_ sender: Any) {
-        let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        viewController.callback = { [weak self] in
-            self?.presentAlertController()
-        }
+//        let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+//        viewController.callback = { [weak self] in
+//            self?.presentAlertController()
+//        }
+
+        Singleton.shared.username = "Rafael Lucena"
+        Singleton.shared.password = "rlmg1234"
+        Singleton.shared.todoList.append(textField.text)
+
 //        viewController.delegate = self
 
-//        guard let viewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController() else {
-//            return
-//        }
+        guard let viewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController() else {
+            return
+        }
 
 //        let viewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(identifier: "homeID")
 
         navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    private func configureImageView() {
+        guard let imageView = imageView else {
+            return
+        }
+
+        imageView.layer.cornerRadius = imageView.frame.size.height / 2
     }
 
     private func registerNotifications() {
