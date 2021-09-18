@@ -12,6 +12,7 @@ final class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    var isXIB = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +24,21 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func signInButtonPressed(_ sender: Any) {
-        guard let missingField = validate() else {
-            performSegue(withIdentifier: Segues.signedIn.rawValue, sender: self)
-            return
+        validateAndNavigateIfNeeded {
+            if self.isXIB {
+                // TODO: load specific storyboard view controller
+            } else {
+                self.performSegue(withIdentifier: Segues.signedIn.rawValue, sender: self)
+            }
         }
-        
-        presentErrorAlert(with: missingField)
+    }
+    
+    @IBAction func signInWithXIBButtonPressed(_ sender: Any) {
+        validateAndNavigateIfNeeded {
+            let viewController = HomeViewController(nibName: "HomeXIBViewController", bundle: nil)
+            viewController.username = self.usernameTextField.text
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -81,5 +91,14 @@ private extension LoginViewController {
     @objc
     func signedOutReceived() {
         handleSignedOutEvent()
+    }
+    
+    func validateAndNavigateIfNeeded(navigationCallback: @escaping () -> Void) {
+        guard let missingField = validate() else {
+            navigationCallback()
+            return
+        }
+        
+        presentErrorAlert(with: missingField)
     }
 }

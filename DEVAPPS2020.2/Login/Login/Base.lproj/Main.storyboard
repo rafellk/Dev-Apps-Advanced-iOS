@@ -26,22 +26,31 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUH-Tu-Qig">
-                                <rect key="frame" x="183.5" y="539" width="47" height="30"/>
+                                <rect key="frame" x="277" y="539" width="47" height="30"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="signInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0b4-hD-EvD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdT-75-g0c">
+                                <rect key="frame" x="90" y="539" width="107" height="30"/>
+                                <state key="normal" title="Sign In with XIB"/>
+                                <connections>
+                                    <action selector="signInWithXIBButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tVq-zF-Qda"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="hUH-Tu-Qig" firstAttribute="top" secondItem="cXY-EQ-PMi" secondAttribute="bottom" constant="36" id="1WG-eZ-i81"/>
                             <constraint firstItem="cXY-EQ-PMi" firstAttribute="top" secondItem="K7k-ot-Zgp" secondAttribute="bottom" constant="31" id="2un-mN-FIq"/>
                             <constraint firstItem="K7k-ot-Zgp" firstAttribute="leading" secondItem="cXY-EQ-PMi" secondAttribute="leading" id="44w-J7-ig2"/>
                             <constraint firstItem="K7k-ot-Zgp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5jv-Mj-OvJ"/>
                             <constraint firstItem="K7k-ot-Zgp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="AOx-WE-tjo"/>
+                            <constraint firstItem="hUH-Tu-Qig" firstAttribute="trailing" secondItem="cXY-EQ-PMi" secondAttribute="trailing" id="G4t-Rd-Qym"/>
                             <constraint firstItem="K7k-ot-Zgp" firstAttribute="trailing" secondItem="cXY-EQ-PMi" secondAttribute="trailing" id="LEm-vh-fOm"/>
-                            <constraint firstItem="K7k-ot-Zgp" firstAttribute="centerX" secondItem="hUH-Tu-Qig" secondAttribute="centerX" id="QyY-KC-twE"/>
+                            <constraint firstItem="hUH-Tu-Qig" firstAttribute="baseline" secondItem="JdT-75-g0c" secondAttribute="baseline" id="cst-vb-Kjo"/>
+                            <constraint firstItem="hUH-Tu-Qig" firstAttribute="top" secondItem="cXY-EQ-PMi" secondAttribute="bottom" constant="36" id="k5t-zh-a2r"/>
+                            <constraint firstItem="JdT-75-g0c" firstAttribute="leading" secondItem="cXY-EQ-PMi" secondAttribute="leading" id="m3J-wL-jHQ"/>
                             <constraint firstItem="K7k-ot-Zgp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="316" id="oSs-Af-JF6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

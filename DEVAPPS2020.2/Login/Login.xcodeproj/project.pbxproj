@@ -15,6 +15,8 @@
 		5747FA3A26F5559F00AAB8B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5747FA2C26F5532600AAB8B2 /* Main.storyboard */; };
 		5747FA3C26F5607E00AAB8B2 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747FA3B26F5607E00AAB8B2 /* Segues.swift */; };
 		5747FA3E26F561E700AAB8B2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747FA3D26F561E700AAB8B2 /* HomeViewController.swift */; };
+		5747FA4026F61AAA00AAB8B2 /* HomeXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5747FA3F26F61AAA00AAB8B2 /* HomeXIBViewController.xib */; };
+		5747FA4226F6209500AAB8B2 /* LoginXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5747FA4126F6209500AAB8B2 /* LoginXIBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		5747FA3426F5532800AAB8B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5747FA3B26F5607E00AAB8B2 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
 		5747FA3D26F561E700AAB8B2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5747FA3F26F61AAA00AAB8B2 /* HomeXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeXIBViewController.xib; sourceTree = "<group>"; };
+		5747FA4126F6209500AAB8B2 /* LoginXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginXIBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				5747FA3426F5532800AAB8B2 /* Info.plist */,
 				5747FA3B26F5607E00AAB8B2 /* Segues.swift */,
 				5747FA3D26F561E700AAB8B2 /* HomeViewController.swift */,
+				5747FA3F26F61AAA00AAB8B2 /* HomeXIBViewController.xib */,
+				5747FA4126F6209500AAB8B2 /* LoginXIBViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -132,7 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5747FA3A26F5559F00AAB8B2 /* Main.storyboard in Resources */,
+				5747FA4026F61AAA00AAB8B2 /* HomeXIBViewController.xib in Resources */,
 				5747FA3326F5532800AAB8B2 /* LaunchScreen.storyboard in Resources */,
+				5747FA4226F6209500AAB8B2 /* LoginXIBViewController.xib in Resources */,
 				5747FA3026F5532800AAB8B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
