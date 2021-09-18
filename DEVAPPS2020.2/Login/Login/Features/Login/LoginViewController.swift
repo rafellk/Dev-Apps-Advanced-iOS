@@ -8,6 +8,12 @@
 
 import UIKit
 
+// usernameTextField -> align X, align Y - 32, equalsWidth * 0.65
+// passwordTextField -> align X, vertical spacing usernameTextField 16, equalsWidth * 1
+// sign in with XIB button -> align X, vertical spacing passwordTextField 32, equalsWidth * 1
+// sign in button -> align X, vertical spacing sign in with XIB button 16, equalsWidth * 1
+
+
 final class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!

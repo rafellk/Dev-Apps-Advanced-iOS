@@ -35,6 +35,12 @@ The Town Now! ;lkjasd;flkjas;df</string>
                                     <action selector="doneButtonPressed:" destination="sZl-dy-IfS" eventType="touchUpInside" id="Gf6-iG-Bvi"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Qyt-fl-NpG">
+                                <rect key="frame" x="190" y="590" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" name="onboarding_background"/>
                         <constraints>
