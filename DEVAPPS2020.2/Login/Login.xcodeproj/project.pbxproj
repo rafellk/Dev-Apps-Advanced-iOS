@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5719C38726F66657003DB583 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5719C38626F66657003DB583 /* OnboardingViewController.swift */; };
 		5747FA2726F5532600AAB8B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747FA2626F5532600AAB8B2 /* AppDelegate.swift */; };
 		5747FA2926F5532600AAB8B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747FA2826F5532600AAB8B2 /* SceneDelegate.swift */; };
 		5747FA2B26F5532600AAB8B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747FA2A26F5532600AAB8B2 /* LoginViewController.swift */; };
@@ -17,9 +18,11 @@
 		5747FA3E26F561E700AAB8B2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747FA3D26F561E700AAB8B2 /* HomeViewController.swift */; };
 		5747FA4026F61AAA00AAB8B2 /* HomeXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5747FA3F26F61AAA00AAB8B2 /* HomeXIBViewController.xib */; };
 		5747FA4226F6209500AAB8B2 /* LoginXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5747FA4126F6209500AAB8B2 /* LoginXIBViewController.xib */; };
+		5747FA4826F65B7500AAB8B2 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5747FA4726F65B7500AAB8B2 /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5719C38626F66657003DB583 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		5747FA2326F5532600AAB8B2 /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5747FA2626F5532600AAB8B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5747FA2826F5532600AAB8B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		5747FA3D26F561E700AAB8B2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5747FA3F26F61AAA00AAB8B2 /* HomeXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeXIBViewController.xib; sourceTree = "<group>"; };
 		5747FA4126F6209500AAB8B2 /* LoginXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginXIBViewController.xib; sourceTree = "<group>"; };
+		5747FA4726F65B7500AAB8B2 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +68,53 @@
 		5747FA2526F5532600AAB8B2 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5747FA4326F65B2700AAB8B2 /* Features */,
 				5747FA2626F5532600AAB8B2 /* AppDelegate.swift */,
 				5747FA2826F5532600AAB8B2 /* SceneDelegate.swift */,
-				5747FA2A26F5532600AAB8B2 /* LoginViewController.swift */,
 				5747FA2C26F5532600AAB8B2 /* Main.storyboard */,
 				5747FA2F26F5532800AAB8B2 /* Assets.xcassets */,
 				5747FA3126F5532800AAB8B2 /* LaunchScreen.storyboard */,
 				5747FA3426F5532800AAB8B2 /* Info.plist */,
 				5747FA3B26F5607E00AAB8B2 /* Segues.swift */,
-				5747FA3D26F561E700AAB8B2 /* HomeViewController.swift */,
-				5747FA3F26F61AAA00AAB8B2 /* HomeXIBViewController.xib */,
-				5747FA4126F6209500AAB8B2 /* LoginXIBViewController.xib */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		5747FA4326F65B2700AAB8B2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5747FA4626F65B3C00AAB8B2 /* Onboarding */,
+				5747FA4526F65B3800AAB8B2 /* Home */,
+				5747FA4426F65B3100AAB8B2 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5747FA4426F65B3100AAB8B2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5747FA4126F6209500AAB8B2 /* LoginXIBViewController.xib */,
+				5747FA2A26F5532600AAB8B2 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5747FA4526F65B3800AAB8B2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5747FA3D26F561E700AAB8B2 /* HomeViewController.swift */,
+				5747FA3F26F61AAA00AAB8B2 /* HomeXIBViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5747FA4626F65B3C00AAB8B2 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5747FA4726F65B7500AAB8B2 /* Onboarding.storyboard */,
+				5719C38626F66657003DB583 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +178,7 @@
 				5747FA3A26F5559F00AAB8B2 /* Main.storyboard in Resources */,
 				5747FA4026F61AAA00AAB8B2 /* HomeXIBViewController.xib in Resources */,
 				5747FA3326F5532800AAB8B2 /* LaunchScreen.storyboard in Resources */,
+				5747FA4826F65B7500AAB8B2 /* Onboarding.storyboard in Resources */,
 				5747FA4226F6209500AAB8B2 /* LoginXIBViewController.xib in Resources */,
 				5747FA3026F5532800AAB8B2 /* Assets.xcassets in Resources */,
 			);
@@ -153,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5747FA3E26F561E700AAB8B2 /* HomeViewController.swift in Sources */,
+				5719C38726F66657003DB583 /* OnboardingViewController.swift in Sources */,
 				5747FA2B26F5532600AAB8B2 /* LoginViewController.swift in Sources */,
 				5747FA2726F5532600AAB8B2 /* AppDelegate.swift in Sources */,
 				5747FA2926F5532600AAB8B2 /* SceneDelegate.swift in Sources */,

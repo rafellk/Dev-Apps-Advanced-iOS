@@ -19,6 +19,15 @@ final class LoginViewController: UIViewController {
         registerNotification()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        if !UserDefaults.standard.bool(forKey: "has_presented_onboarding") {
+//            UserDefaults.standard.setValue(true, forKey: "has_presented_onboarding")
+            guard let viewController = UIStoryboard(name: "Onboarding", bundle: nil).instantiateInitialViewController() else { return }
+            present(viewController, animated: true, completion: nil)
+//        }
+    }
+    
     @IBAction func signInButtonPressed(_ sender: Any) {
         validateAndNavigateIfNeeded {
             if self.isXIB {
