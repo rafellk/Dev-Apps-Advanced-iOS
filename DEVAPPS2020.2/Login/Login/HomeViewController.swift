@@ -19,4 +19,9 @@ final class HomeViewController: UIViewController {
         guard let username = username else { return }
         welcomeLabel.text = "Welcome \(username)"
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.post(Notification(name: Notification.Name("signedOut")))
+    }
 }
