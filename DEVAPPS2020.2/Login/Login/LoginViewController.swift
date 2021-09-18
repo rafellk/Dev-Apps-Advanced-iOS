@@ -19,10 +19,6 @@ final class LoginViewController: UIViewController {
         registerNotification()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
     @IBAction func signInButtonPressed(_ sender: Any) {
         validateAndNavigateIfNeeded {
             if self.isXIB {

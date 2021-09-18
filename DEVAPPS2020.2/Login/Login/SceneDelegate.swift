@@ -14,9 +14,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
-        let viewController = LoginViewController(nibName: "LoginXIBViewController", bundle: nil)
-        viewController.isXIB = true
-        window?.rootViewController = UINavigationController(rootViewController: viewController)
+        if let username = UserDefaults.standard.string(forKey: "signed_in_user") {
+            let viewController = HomeViewController(nibName: "HomeXIBViewController", bundle: nil)
+            viewController.username = username
+            window?.rootViewController = UINavigationController(rootViewController: viewController)
+        } else {
+            let viewController = LoginViewController(nibName: "LoginXIBViewController", bundle: nil)
+            viewController.isXIB = true
+            window?.rootViewController = UINavigationController(rootViewController: viewController)
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
