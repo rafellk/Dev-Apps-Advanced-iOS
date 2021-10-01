@@ -14,11 +14,11 @@ struct AppCoordinator {
         if let username = UserDefaults.standard.string(forKey: "signed_in_user") {
             let viewController = HomeViewController(nibName: "HomeXIBViewController", bundle: nil)
             viewController.username = username
-            return viewController
+            return UINavigationController(rootViewController: viewController)
         } else {
             let viewController = LoginViewController(nibName: "LoginXIBViewController", bundle: nil)
             viewController.isXIB = true
-            return viewController
+            return UINavigationController(rootViewController: viewController)
         }
     }
 }
