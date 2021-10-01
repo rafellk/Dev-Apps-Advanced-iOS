@@ -16,41 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sX-yp-8F2">
-                                <rect key="frame" x="1.5" y="644" width="411" height="74"/>
-                                <string key="text">The best jewellery in 
-The Town Now! ;lkjasd;flkjas;df</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the best Onboarding you've ever seen" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sX-yp-8F2">
+                                <rect key="frame" x="52" y="689" width="310.5" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" name="onboarding_label"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FS-nh-oAm">
-                                <rect key="frame" x="182" y="795" width="54" height="40"/>
+                                <rect key="frame" x="52" y="790" width="310.5" height="40"/>
+                                <color key="backgroundColor" name="onboarding_button"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="0hb-pO-ywp"/>
+                                    <constraint firstAttribute="height" constant="40" id="uSx-3N-gaw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Done"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" name="onboarding_label"/>
+                                </state>
                                 <connections>
                                     <action selector="doneButtonPressed:" destination="sZl-dy-IfS" eventType="touchUpInside" id="Gf6-iG-Bvi"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Qyt-fl-NpG">
-                                <rect key="frame" x="190" y="590" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" name="onboarding_background"/>
                         <constraints>
-                            <constraint firstItem="4FS-nh-oAm" firstAttribute="top" secondItem="8sX-yp-8F2" secondAttribute="bottom" constant="77" id="8aD-pt-4k3"/>
-                            <constraint firstItem="e3C-ff-7Cc" firstAttribute="bottom" secondItem="4FS-nh-oAm" secondAttribute="bottom" constant="27" id="Jea-N1-Uy7"/>
-                            <constraint firstItem="4FS-nh-oAm" firstAttribute="leading" secondItem="e3C-ff-7Cc" secondAttribute="leading" constant="182" id="Khk-4i-hap"/>
-                            <constraint firstItem="8sX-yp-8F2" firstAttribute="centerX" secondItem="Mpn-qU-36a" secondAttribute="centerX" id="vdY-ua-YcS"/>
+                            <constraint firstItem="e3C-ff-7Cc" firstAttribute="bottom" secondItem="4FS-nh-oAm" secondAttribute="bottom" constant="32" id="E5B-0Z-uXb"/>
+                            <constraint firstItem="8sX-yp-8F2" firstAttribute="centerX" secondItem="e3C-ff-7Cc" secondAttribute="centerX" id="EKr-Qu-5P3"/>
+                            <constraint firstItem="4FS-nh-oAm" firstAttribute="centerX" secondItem="e3C-ff-7Cc" secondAttribute="centerX" id="bPO-Pj-4Vx"/>
+                            <constraint firstItem="4FS-nh-oAm" firstAttribute="width" secondItem="Mpn-qU-36a" secondAttribute="width" multiplier="0.75" id="fPg-ZU-oKN"/>
+                            <constraint firstItem="4FS-nh-oAm" firstAttribute="top" secondItem="8sX-yp-8F2" secondAttribute="bottom" constant="48" id="prA-Za-dw2"/>
+                            <constraint firstItem="8sX-yp-8F2" firstAttribute="width" secondItem="4FS-nh-oAm" secondAttribute="width" id="u3y-qp-nih"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e3C-ff-7Cc"/>
                     </view>
+                    <connections>
+                        <outlet property="doneButton" destination="4FS-nh-oAm" id="Ll2-Y7-KWZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UpX-6o-sFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +60,9 @@ The Town Now! ;lkjasd;flkjas;df</string>
     <resources>
         <namedColor name="onboarding_background">
             <color red="0.97254901960784312" green="0.88235294117647056" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="onboarding_button">
+            <color red="0.94901960784313721" green="0.7803921568627451" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="onboarding_label">
             <color red="0.41568627450980394" green="0.31764705882352939" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

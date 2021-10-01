@@ -18,26 +18,34 @@ final class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signInWithXIBButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
     var isXIB = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNotification()
+        
+        signInWithXIBButton.layer.cornerRadius = 4
+        signInButton.layer.cornerRadius = 4
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        if !UserDefaults.standard.bool(forKey: "has_presented_onboarding") {
-//            UserDefaults.standard.setValue(true, forKey: "has_presented_onboarding")
+        if !UserDefaults.standard.bool(forKey: "has_presented_onboarding") {
+            UserDefaults.standard.setValue(true, forKey: "has_presented_onboarding")
             guard let viewController = UIStoryboard(name: "Onboarding", bundle: nil).instantiateInitialViewController() else { return }
             present(viewController, animated: true, completion: nil)
-//        }
+        }
     }
     
     @IBAction func signInButtonPressed(_ sender: Any) {
         validateAndNavigateIfNeeded {
             if self.isXIB {
                 // TODO: load specific storyboard view controller
+                guard let username = self.usernameTextField.text else { return }
+                let viewController = HomeViewCodeViewController(with: username)
+                self.navigationController?.pushViewController(viewController, animated: true)
             } else {
                 self.performSegue(withIdentifier: Segues.signedIn.rawValue, sender: self)
             }

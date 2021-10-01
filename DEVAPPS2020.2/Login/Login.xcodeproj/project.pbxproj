@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5719C38726F66657003DB583 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5719C38626F66657003DB583 /* OnboardingViewController.swift */; };
+		5719C38926F6813B003DB583 /* HomeViewCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5719C38826F6813B003DB583 /* HomeViewCodeViewController.swift */; };
 		5747FA2726F5532600AAB8B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747FA2626F5532600AAB8B2 /* AppDelegate.swift */; };
 		5747FA2926F5532600AAB8B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747FA2826F5532600AAB8B2 /* SceneDelegate.swift */; };
 		5747FA2B26F5532600AAB8B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747FA2A26F5532600AAB8B2 /* LoginViewController.swift */; };
@@ -19,10 +20,12 @@
 		5747FA4026F61AAA00AAB8B2 /* HomeXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5747FA3F26F61AAA00AAB8B2 /* HomeXIBViewController.xib */; };
 		5747FA4226F6209500AAB8B2 /* LoginXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5747FA4126F6209500AAB8B2 /* LoginXIBViewController.xib */; };
 		5747FA4826F65B7500AAB8B2 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5747FA4726F65B7500AAB8B2 /* Onboarding.storyboard */; };
+		57B9B1252707C3BA00C7354F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B9B1242707C3BA00C7354F /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5719C38626F66657003DB583 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		5719C38826F6813B003DB583 /* HomeViewCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCodeViewController.swift; sourceTree = "<group>"; };
 		5747FA2326F5532600AAB8B2 /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5747FA2626F5532600AAB8B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5747FA2826F5532600AAB8B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		5747FA3F26F61AAA00AAB8B2 /* HomeXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeXIBViewController.xib; sourceTree = "<group>"; };
 		5747FA4126F6209500AAB8B2 /* LoginXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginXIBViewController.xib; sourceTree = "<group>"; };
 		5747FA4726F65B7500AAB8B2 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		57B9B1242707C3BA00C7354F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 				5747FA4326F65B2700AAB8B2 /* Features */,
 				5747FA2626F5532600AAB8B2 /* AppDelegate.swift */,
 				5747FA2826F5532600AAB8B2 /* SceneDelegate.swift */,
+				57B9B1242707C3BA00C7354F /* AppCoordinator.swift */,
 				5747FA2C26F5532600AAB8B2 /* Main.storyboard */,
 				5747FA2F26F5532800AAB8B2 /* Assets.xcassets */,
 				5747FA3126F5532800AAB8B2 /* LaunchScreen.storyboard */,
@@ -104,6 +109,7 @@
 			children = (
 				5747FA3D26F561E700AAB8B2 /* HomeViewController.swift */,
 				5747FA3F26F61AAA00AAB8B2 /* HomeXIBViewController.xib */,
+				5719C38826F6813B003DB583 /* HomeViewCodeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -191,9 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5719C38926F6813B003DB583 /* HomeViewCodeViewController.swift in Sources */,
 				5747FA3E26F561E700AAB8B2 /* HomeViewController.swift in Sources */,
 				5719C38726F66657003DB583 /* OnboardingViewController.swift in Sources */,
 				5747FA2B26F5532600AAB8B2 /* LoginViewController.swift in Sources */,
+				57B9B1252707C3BA00C7354F /* AppCoordinator.swift in Sources */,
 				5747FA2726F5532600AAB8B2 /* AppDelegate.swift in Sources */,
 				5747FA2926F5532600AAB8B2 /* SceneDelegate.swift in Sources */,
 				5747FA3C26F5607E00AAB8B2 /* Segues.swift in Sources */,
