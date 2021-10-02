@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="JewelleryApp" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="eDq-97-GC9" id="oGn-e5-fB2"/>
+                <outlet property="collectionViewTopConstraint" destination="5TW-Y6-8bw" id="LHh-SY-CjK"/>
+                <outlet property="headerStackView" destination="4VX-Ap-o4b" id="lXI-ls-MWT"/>
                 <outlet property="searchTextField" destination="1PP-oj-uTn" id="XzV-4H-BOD"/>
                 <outlet property="view" destination="iN0-l3-epB" id="DF7-oA-Q2x"/>
             </connections>
