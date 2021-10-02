@@ -67,9 +67,17 @@ final class OnboardingViewController: UIViewController {
         super.viewDidLoad()
 //        configureLayout()
         configureStackView()
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
+//    @objc
+//    func nextButtonTapped() {
+//        let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+//        navigationController?.pushViewController(viewController, animated: true)
+//    }
 }
 
+// MARK: Layout configuration extension
 private extension OnboardingViewController {
     
     func configureStackView() {
@@ -98,6 +106,11 @@ private extension OnboardingViewController {
         let multiplier = UIDevice.current.userInterfaceIdiom == .pad ? 0.6 : 0.95
         jewelleryImageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: multiplier).isActive = true
         jewelleryImageView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: multiplier).isActive = true
+        
+        nextButtonImageView.isUserInteractionEnabled = true
+        let gesture = UITapGestureRecognizer()
+        gesture.addTarget(self, action: #selector(nextButtonTapped))
+        nextButtonImageView.addGestureRecognizer(gesture)
     }
     
     func configureLayout() {
@@ -129,5 +142,15 @@ private extension OnboardingViewController {
         jewelleryImageView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         jewelleryImageView.heightAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         jewelleryImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    }
+}
+
+// MARK: Actions extension
+private extension OnboardingViewController {
+    
+    @objc
+    func nextButtonTapped() {
+        let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

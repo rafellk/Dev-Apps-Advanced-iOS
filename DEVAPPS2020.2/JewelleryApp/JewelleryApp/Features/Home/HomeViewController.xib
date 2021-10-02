@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="JewelleryApp" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="eDq-97-GC9" id="oGn-e5-fB2"/>
+                <outlet property="searchTextField" destination="1PP-oj-uTn" id="XzV-4H-BOD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="DF7-oA-Q2x"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="4VX-Ap-o4b">
+                    <rect key="frame" x="16" y="32" width="288" height="139.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best jewellery for you" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmR-xE-44H">
+                            <rect key="frame" x="0.0" y="0.0" width="288" height="81.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                            <color key="textColor" name="title_color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1PP-oj-uTn">
+                            <rect key="frame" x="0.0" y="99.5" width="288" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Lqq-CH-QAV"/>
+                            </constraints>
+                            <color key="textColor" name="search_color"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eDq-97-GC9">
+                    <rect key="frame" x="0.0" y="189.5" width="320" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="3Cn-UF-9jX"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ccl-Wu-wIc">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="eDq-97-GC9" firstAttribute="top" secondItem="4VX-Ap-o4b" secondAttribute="bottom" constant="18" id="5TW-Y6-8bw"/>
+                <constraint firstItem="4VX-Ap-o4b" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="32" id="IeH-hb-fVD"/>
+                <constraint firstItem="eDq-97-GC9" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Rhr-wA-lrA"/>
+                <constraint firstItem="4VX-Ap-o4b" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="VST-PN-UFI"/>
+                <constraint firstItem="eDq-97-GC9" firstAttribute="centerX" secondItem="4VX-Ap-o4b" secondAttribute="centerX" id="sKc-6H-3rb"/>
+                <constraint firstItem="4VX-Ap-o4b" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="w31-Iv-bSg"/>
+            </constraints>
+            <point key="canvasLocation" x="147.82608695652175" y="121.875"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="search_color">
+            <color red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="title_color">
+            <color red="0.41568627450980394" green="0.31764705882352939" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
