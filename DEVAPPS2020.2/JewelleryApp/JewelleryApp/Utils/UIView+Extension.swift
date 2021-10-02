@@ -41,6 +41,15 @@ extension UIView {
         topAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.topAnchor, constant: edges.top).isActive = true
         bottomAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.bottomAnchor, constant: -edges.bottom).isActive = true
     }
+    
+    func constrainToSuperviewSafeAreaAxis() {
+        guard let superview = superview else {
+            fatalError("Superview is not here")
+        }
+
+        centerXAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.centerXAnchor).isActive = true
+        centerYAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.centerYAnchor).isActive = true
+    }
 }
 
 extension UIEdgeInsets {
